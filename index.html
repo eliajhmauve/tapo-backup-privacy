@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tapo Construction Backup — 資料處理與隱私說明</title>
+<style>body{max-width:760px;margin:48px auto;padding:0 24px;font:18px/1.8 system-ui,sans-serif;color:#20242a}h1{font-size:28px}h2{font-size:21px}footer{font-size:14px;color:#59616b;margin-top:32px}</style>
+<main><h1>Tapo Construction Backup</h1><p>這是供資料擁有人自行使用的施工監看錄影備份工具。攝影機影像由 Windows 電腦錄製，完成的影片備份至使用者指定的 Google Drive。</p>
+<h2>存取與用途</h2><p>Google 授權使用 <code>drive.file</code> 範圍，只用於此應用程式建立或經使用者授權使用的 Drive 檔案。授權用於建立備份資料夾、上傳影片及核對備份完整性；不讀取 Gmail、聯絡人或行事曆。</p>
+<h2>本機與雲端儲存</h2><p>攝影機帳密以 Windows CurrentUser DPAPI 加密保存在本機。Google 授權憑證保存在本機 rclone 設定中。錄影先存於本機，再傳至 Google Drive。工具不自動公開影片、不販售錄影資料，也不將資料提供給廣告或模型訓練服務。</p>
+<h2>保留與刪除</h2><p>本機影片保留最近 7 天。超過 7 天的影片，只有在重新核對雲端檔案大小與 MD5 一致後才清理；未完成備份或核對失敗的影片會保留。工具不自動刪除雲端影片，雲端保留時間由使用者自行管理。</p>
+<h2>停止與撤回</h2><p>使用者可以停止本機服務，並前往 <a href="https://myaccount.google.com/connections">Google 帳戶的第三方連線設定</a>撤回 Drive 授權。撤回後會停止新的雲端備份；既有影片可由使用者在本機或 Drive 自行管理。聯絡方式可在 Google 的應用程式授權畫面查看。</p>
+<footer>更新：2026-10-13。此頁為應用程式資料處理說明，不公開監視器帳號、密碼、位置、影片或金鑰。</footer></main></html>
